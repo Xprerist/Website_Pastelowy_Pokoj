@@ -4,5 +4,5 @@ RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 # Dann leite direkt auf die HTTPS-WWW-Version weiter
-RewriteRule ^(.*)$ https://www.deinedomain.de/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.joga-koscian.pl/$1 [L,R=301]
 
