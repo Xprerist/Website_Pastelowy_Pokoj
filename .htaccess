@@ -1,6 +1,8 @@
 RewriteEngine On
 
-# OVH Spezial: Prüft den X-Forwarded-Proto Header
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Wenn nicht HTTPS ODER wenn das www am Anfang fehlt
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+# Dann leite direkt auf die HTTPS-WWW-Version weiter
+RewriteRule ^(.*)$ https://www.deinedomain.de/$1 [L,R=301]
 
