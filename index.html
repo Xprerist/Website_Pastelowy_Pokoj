@@ -34,7 +34,9 @@
             margin: auto;
         }
      
-        .h1 { color: #446744; }
+        h1 { 
+            color: #446744;
+            font-size: 2.5em; }
         h2 { 
             color: #1d4f1d !important; /* !important stellt sicher, dass die Farbe gewinnt */
             text-align:center; 
@@ -73,7 +75,8 @@
 
         .teacher-card {
             background: white;
-            width: 350px;
+            max-width: 350px;
+            width: 100%;
             padding: 20px;
             border-radius: 15px;
             text-align: center;
@@ -81,8 +84,11 @@
         }
 
         .avatar {
-            width: 350px;    /* Das Bild wird nie breiter als die Karte */
-            height: 600px;       /* Die Höhe passt sich automatisch an, nichts wird verzerrt */
+            max-width: 100%; /* Geändert */
+            height: auto;    /* Geändert, damit das Seitenverhältnis stimmt */
+            aspect-ratio: 350 / 600; /* Behält dein gewünschtes Format bei */
+            /* width: 350px;  /*  /* Das Bild wird nie breiter als die Karte */
+            /* height: 600px; /*      /* Die Höhe passt sich automatisch an, nichts wird verzerrt */
             border-radius: 10px; /* Ein leicht abgerundeter Rand sieht edler aus als harte Ecken */
             margin: 0 auto 15px; /* Zentriert das Bild und gibt Abstand nach unten */
             display: block;     /* Verhindert kleine Abstände unter dem Bild */
