@@ -33,18 +33,22 @@
             max-width: 900px;
             margin: auto;
         }
-
-        h1, h2 { color: #8fa98f; }
-
+     
         CSS
         .h1 { color: #8fa98f; }
         .h2 { color: #8fa98f; }
-        .h3 { color: #8fa98f; }
+        .h3 { 
+            color:#446744;
+            style="text-align:center; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Falls gewünscht */
+            font-weight: bold;
+            margin-top: 1em;
+            }
         .h4 {
             /* Diese Werte erbt sie vom Body */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #5a5a5a;
-            /* Diese Werte setzt der Browser standardmäßig für H3 */
+            /* Diese Werte setzt der Browser standardmäßig für h3 */
             font-size: 1.17em; /* Das ist der Standardwert für h3 */
             font-weight: bold;
             display: block;
@@ -223,7 +227,7 @@
 </section>
 
 <section id="teachers" >
-    <h2 style="text-align:center; color:#446744;">Nauczyciele</h2>
+    <h3>Nauczyciele</h3>
     <div class="teacher-grid">
         <div class="teacher-card">
              <h4>Julita</h4>
@@ -322,7 +326,7 @@
 </section>
 
 <section id="location" style="text-align:center; font-family: sans-serif; margin-top: 50px; padding: 20px;">
-    <h2 style="margin-bottom:30px">Jak nas znaleźć</h2>
+    <h3 style="margin-bottom:30px">Jak nas znaleźć</h3>
     <p style="text-align:left; font-weight: bold; color: #090909; margin-bottom: 8px;">Joga w Pastelowym Pokoju, ul. Słoneczna 12, 64-000 Nowy Lubosz</p> 
     <div class="map-container"> 
         <iframe 
@@ -339,7 +343,7 @@
 </section>
 
 <section id="faq" style="text-align:center; display:flex; flex-direction:column; align-items:center; font-family: sans-serif; margin-top: 50px; padding: 20px;">  
-    <h2 style="color: #333; margin-bottom: 30px;">FAQ – Najczęściej zadawane pytania</h2>
+    <h3 style="color: #333; margin-bottom: 30px;">FAQ – Najczęściej zadawane pytania</h3>
 
     <div style="max-width: 700px; text-align: left; line-height: 1.6;">
         
