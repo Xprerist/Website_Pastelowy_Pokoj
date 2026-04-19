@@ -36,6 +36,22 @@
 
         h1, h2 { color: #8fa98f; }
 
+        CSS
+        .h1 { color: #8fa98f; }
+        .h2 { color: #8fa98f; }
+        .h3 { color: #8fa98f; }
+        .h4 {
+            /* Diese Werte erbt sie vom Body */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #5a5a5a;
+            /* Diese Werte setzt der Browser standardmäßig für H3 */
+            font-size: 1.17em; /* Das ist der Standardwert für h3 */
+            font-weight: bold;
+            display: block;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
         /* Lehrer-Bereich */
         .teacher-grid {
             display: grid;
@@ -210,7 +226,7 @@
     <h2 style="text-align:center; color:#446744;">Nauczyciele</h2>
     <div class="teacher-grid">
         <div class="teacher-card">
-             <h3>Julita</h3>
+             <h4>Julita</h4>
             <!-- Hier wird das Bild eingefügt -->
             <img src="Media/intro_julita.jpeg" alt="Julita - włascicielka i instruktorka jogi w studiu Pastelowy Pokój" class="avatar">
             <p><strong>Spokój w ruchu:</strong> Julita wnosi harmonię do każdej praktyki jogi. 
@@ -218,7 +234,7 @@
                 Pod jej uważnym okiem każdy odnajdzie wariant dopasowany do potrzeb ciała i duszy.</p>
         </div>
         <div class="teacher-card">
-            <h3>Jens</h3>
+            <h4>Jens</h4>
             <!-- Hier wird das Bild eingefügt -->
             <img src="Media/intro_jens.jpg" alt="Jens - zespół Pastelowy Pokój Kościan, Pilates instruktor" class="avatar">
             <p><strong>Medytacja w ruchu:</strong> Jens praktykuje płynne, dynamiczne style jogi, 
