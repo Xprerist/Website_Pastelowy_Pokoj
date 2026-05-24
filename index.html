@@ -220,8 +220,8 @@
 .testimonial-slider {
     display: flex;
     gap: 20px;
-
-    animation: scrollTestimonials 25s linear infinite;
+    width: max-content;
+    animation: scrollTestimonials 60s linear infinite;
 }
 
 .testimonial-card {
@@ -249,7 +249,7 @@
     }
 
     100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-50% - 10px));
     }
 }   /* END TESTIMONIALS */
 
