@@ -198,6 +198,55 @@
     display: block;
 }
 
+/* TESTIMONIALS */
+
+.testimonial-section {
+    background: #d4e2d4;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 20px;
+
+    animation: scrollTestimonials 25s linear infinite;
+}
+
+.testimonial-card {
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    line-height: 1.6;
+    color: #444;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1d4f1d;
+}
+
+@keyframes scrollTestimonials {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}   /* ENDTESTIMONIALS */
+
     </style>
 </head>
 
@@ -454,6 +503,28 @@
     Napisz do nas
     </a>
 </section>
+
+<section class="testimonial-section">
+
+    <h2>Opinie naszych uczestników</h2>
+
+    <div class="testimonial-slider">
+
+        <div class="testimonial-card">
+            <p>
+                „Cudowna atmosfera i pełen profesjonalizm.
+                Po zajęciach zawsze wracam spokojniejsza.”
+            </p>
+            <span>– Anna</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                „Najlepsze miejsce do praktyki jogi w okolicy.
+                Kameralnie i bardzo serdecznie.”
+            </p>
+            <span>– Katarzyna</span>
+        </div>
 
 <footer>
     &copy; 2026 Joga w Pastelowym Pokoju
