@@ -1,0 +1,429 @@
+/* ==========================================================================
+   1. GEMEINSAME BASIS-STYLES (Für alle Seiten gültig)
+========================================================================== */
+
+/* Płynne przewijanie */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #fdf6f0;
+    /* Sanftes Cremeweiß */
+    color: #5a5a5a;
+    /* Standard-Textfarbe für die Hauptseite */
+}
+
+header {
+    background-color: #d4e2d4;
+    /* Pastellgrün */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+section {
+    padding: 50px 20px;   /*  geändert von padding: 10px 20px;  */
+    max-width: 900px;
+    margin: auto;
+}
+
+.nav-main, .nav-blog {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* #fff und white ist dasselbe */
+    text-align: center;
+}
+
+.footer-main, .footer-blog {
+    text-align: center;
+}
+
+/* ==========================================================================
+   2. STYLES FÜR HAUPTSEITE (index.html)
+========================================================================== */
+
+/* Design & Farben */
+
+.nav-main {
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* section {
+    padding: 10px 20px;
+    max-width: 900px;
+    margin: auto;   
+} Section vom Blog - prüfen und wegwerfen */ 
+
+h1 {
+    color: #1d4f1d;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #1d4f1d !important;
+    /* !important stellt sicher, dass die Farbe gewinnt */
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Falls gewünscht */
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+h3 {
+    color: #1d4f1d;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Falls gewünscht */
+    font-weight: bold;
+    margin-top: 1em;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.h4 {
+    /* Diese Werte erbt sie vom Body */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #211b1b;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    font-size: 1.4em;
+    font-weight: 650;
+    margin-top: 0;
+    color: #1d4f1d;
+}
+
+.location {
+    font-size: 1.9em;
+    color: #1d4f1d;
+    display: block;
+}
+
+/* Lehrer-Bereich */
+.teacher-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+}
+
+.teacher-card {
+    background: white;
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.avatar {
+    max-width: 100%;
+    /* Geändert */
+    height: auto;
+    /* Geändert, damit das Seitenverhältnis stimmt */
+    aspect-ratio: 350 / 600;
+    /* Behält dein gewünschtes Format bei */
+    /* width: 350px;  /*  /* Das Bild wird nie breiter als die Karte */
+    /* height: 600px; /*      /* Die Höhe passt sich automatisch an, nichts wird verzerrt */
+    border-radius: 10px;
+    /* Ein leicht abgerundeter Rand sieht edler aus als harte Ecken */
+    margin: 0 auto 15px;
+    /* Zentriert das Bild und gibt Abstand nach unten */
+    display: block;
+    /* Verhindert kleine Abstände unter dem Bild */
+    object-fit: cover;
+    /* schneidet das Bild sauber zu */
+    object-position: 60% center;
+    /* zentriert den Fokus */
+}
+
+/* Lageplan-Platzhalter */
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #d4e2d4;
+    /* Pastellgrün */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 2px dashed #8fa98f;
+}
+
+.footer-main {
+    padding: 20px;
+    font-size: 0.9em;
+    background-color: #f4f4f4; /* Hellgrau */
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.text-block {
+    line-height: 1.6;
+    color: #000000;
+    text-align: center
+}
+
+.about-container {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.6;
+    color: #000000;
+    font-size: 1.05em;
+}
+
+.about-story {
+    font-family: sans-serif;
+    padding: 40px 20px;
+}
+
+#about-story {
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.cta-button {
+    display: table;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #d27d6b;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO IMAGE / SLIDER */
+
+.hero-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-slider img {
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;
+    object-position: center bottom;
+    display: block;
+}
+
+/* END HERO IMAGE / SLIDER */
+
+/* TESTIMONIALS */
+
+.testimonial-section {
+    background: #d4e2d4;
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 20px;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.testimonial-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollTestimonials 60s linear infinite;
+}
+
+.testimonial-card {
+    width: 320px;
+    flex-shrink: 0;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+    color: #444;
+}
+
+.testimonial-card span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1d4f1d;
+}
+
+@keyframes scrollTestimonials {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 10px));
+    }
+}
+
+/* END TESTIMONIALS */
+
+/* ==========================================================================
+   3. STYLES FÜR DEN BLOG (blog.html)
+========================================================================== */
+
+body.blog-page {
+    color: #444;
+    /* gilt anstatt der Basis Styles*/
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.blog-page header {
+    padding: 40px;
+}
+
+header h1 {
+    margin: 0;
+    color: #1d4f1d;
+    font-size: 3em;
+}
+
+header p {
+    color: #1d4f1d;
+    font-size: 1.2em;
+}
+
+/**********************
+NAVIGATION
+**********************/
+
+nav {
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+nav a {
+    color: #1d4f1d;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+/**********************
+HERO
+**********************/
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+/**********************
+POST GRID
+**********************/
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+/**********************
+CARD
+**********************/
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 25px;
+}
+
+.category {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+}
+
+.card h2 {
+    color: #1d4f1d;
+    margin-top: 10px;
+}
+
+/**********************
+TEXT PREVIEW
+**********************/
+
+.preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.7;
+}
+
+/**********************
+BUTTON
+**********************/
+
+.readmore {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    background: #d27d6b;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/**********************
+FOOTER
+**********************/
+
+.footer-blog {
+    padding: 40px;
+    background-color: #efefef; /* Minimal dunkleres Grau */
