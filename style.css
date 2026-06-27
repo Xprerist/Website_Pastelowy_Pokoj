@@ -24,19 +24,23 @@ header {
 }
 
 section {
-    padding: 50px 20px;   /*  geändert von padding: 10px 20px;  */
+    padding: 50px 20px;
+    /*  geändert von padding: 10px 20px;  */
     max-width: 900px;
     margin: auto;
 }
 
-.nav-main, .nav-blog {
+.nav-main,
+.nav-blog {
     position: sticky;
     top: 0;
-    background-color: #fff; /* #fff und white ist dasselbe */
+    background-color: #fff;
+    /* #fff und white ist dasselbe */
     text-align: center;
 }
 
-.footer-main, .footer-blog {
+.footer-main,
+.footer-blog {
     text-align: center;
 }
 
@@ -55,7 +59,7 @@ section {
     padding: 10px 20px;
     max-width: 900px;
     margin: auto;   
-} Section vom Blog - prüfen und wegwerfen */ 
+} Section vom Blog - prüfen und wegwerfen */
 
 h1 {
     color: #1d4f1d;
@@ -164,7 +168,8 @@ h3 {
 .footer-main {
     padding: 20px;
     font-size: 0.9em;
-    background-color: #f4f4f4; /* Hellgrau */
+    background-color: #f4f4f4;
+    /* Hellgrau */
 }
 
 .container {
@@ -281,6 +286,7 @@ h3 {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(calc(-50% - 10px));
     }
@@ -344,6 +350,34 @@ HERO
     object-fit: cover;
     display: block;
 }
+
+/**************************************************
+ FEATURED ARTICLE
+**************************************************/
+
+.featured-post {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    margin-bottom: 60px;
+}
+
+.featured-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-post .content {
+    padding: 35px;
+}
+
+.featured-post h2 {
+    color: #1d4f1d;
+    margin-top: 10px;
+}
+
 
 /**********************
 POST GRID
@@ -426,4 +460,5 @@ FOOTER
 
 .footer-blog {
     padding: 40px;
-    background-color: #efefef; /* Minimal dunkleres Grau */
+    background-color: #efefef;
+    /* Minimal dunkleres Grau */
