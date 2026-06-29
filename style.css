@@ -24,7 +24,8 @@ header {
 }
 
 section {
-    padding: 50px 20px;         /*  geändert von padding: 10px 20px;  */
+    padding: 50px 20px;
+    /*  geändert von padding: 10px 20px;  */
     max-width: 900px;
     margin: auto;
 }
@@ -34,8 +35,9 @@ section {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #fff;     /* #fff und white ist dasselbe */
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    background-color: #fff;
+    /* #fff und white ist dasselbe */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
     text-align: center;
 }
 
@@ -294,6 +296,52 @@ h3 {
 
 /* END TESTIMONIALS */
 
+
+/* BEGIN HAMBURGER MENU */
+#menu-button {
+    position: fixed;
+    top: 65px;
+    left: 25px;
+    z-index: 9999;
+    background: rgba(255, 255, 255, .85);
+    border: none;
+    border-radius: 12px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 42px;
+    left: -300px;
+    width: 200px;
+    height: 240px;
+    background: white;
+    transition: .3s;
+    padding-top: 140px;
+    z-index: 9998;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, .15);
+}
+
+#mobile-menu.open {
+    left: 0;
+}
+
+#mobile-menu a {
+    display: block;
+    padding: 20px 35px;
+    text-decoration: none;
+    color: #1d4f1d;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* END HAMBURGER MENU */
+
 /* ==========================================================================
    3. STYLES FÜR DEN BLOG (blog.html)
 ========================================================================== */
@@ -416,14 +464,19 @@ CARD
 .card img {
     width: 90%;
     height: auto;
-    object-fit: contain;        /* sorgt dafür, dass nichts abgeschnitten wird */
-                                /* cover; - dann wird angeschnitten */
-    margin-top: 20px;           /* Schiebt das Bild um 15 Pixel nach unten */
+    object-fit: contain;
+    /* sorgt dafür, dass nichts abgeschnitten wird */
+    /* cover; - dann wird angeschnitten */
+    margin-top: 20px;
+    /* Schiebt das Bild um 15 Pixel nach unten */
 
-    margin-left: auto;          /* Diese beiden Zeilen zentrieren das Bild horizontal: */
-    margin-right: auto;         /* Diese beiden Zeilen zentrieren das Bild horizontal: */
+    margin-left: auto;
+    /* Diese beiden Zeilen zentrieren das Bild horizontal: */
+    margin-right: auto;
+    /* Diese beiden Zeilen zentrieren das Bild horizontal: */
 
-    display: block;             /* Verhindert unerwünschte Abstände nach unten */
+    display: block;
+    /* Verhindert unerwünschte Abstände nach unten */
 }
 
 .content {
