@@ -572,7 +572,7 @@ EIN/AUS SCHALTER für Elemente, z.B. Logo
 /* Tablet */
 @media (max-width: 1024px) {
     .logo img {
-        width: 120px;
+        width: 160px;
     }
 }
 
