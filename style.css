@@ -556,10 +556,29 @@ FOOTER
 EIN/AUS SCHALTER für Elemente, z.B. Logo
 **********************************************/
 
-    /* Smartphone Hochformat */
-    @media (max-width: 768px) {
-        .logo {
-            display: none;
-        }
-
+/* Smartphone Hochformat
+@media (max-width: 768px) {
+    .logo {
+        display: none;
     }
+}
+*/
+
+/* Desktop */
+.logo img {
+    width: 180px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .logo img {
+        width: 120px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
