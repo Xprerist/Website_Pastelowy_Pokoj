@@ -296,6 +296,20 @@ h3 {
 
 /* END TESTIMONIALS */
 
+/* BEGIN LOGO */
+.logo {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 9999;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+/* END LOGO */
 
 /* BEGIN HAMBURGER MENU */
 #menu-button {
