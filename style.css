@@ -238,6 +238,22 @@ h3 {
     display: block;
 }
 
+.hero-image{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin:30px 0;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:900px;
+    border-radius:8px;
+    display:block;
+}
+
 /* END HERO IMAGE / SLIDER */
 
 /* TESTIMONIALS */
@@ -358,8 +374,16 @@ h3 {
 /* END HAMBURGER MENU */
 
 /* ==========================================================================
-   3. STYLES FÜR DEN BLOG (blog.html)
+   3. STYLES FÜR BLOG (blog.html) UND ARTICLES
 ========================================================================== */
+
+.blog-post{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px 60px;
+    color:#2d2d2d;
+    box-sizing:border-box;
+}
 
 body.blog-page {
     color: #444;
