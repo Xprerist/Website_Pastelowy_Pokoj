@@ -293,6 +293,7 @@ h3 {
         transform: translateX(calc(-50% - 10px));
     }
 }
+
 /* END TESTIMONIALS */
 
 /* BEGIN LOGO */
@@ -308,6 +309,7 @@ h3 {
     height: auto;
     display: block;
 }
+
 /* END LOGO */
 
 /* BEGIN HAMBURGER MENU */
@@ -548,3 +550,16 @@ FOOTER
     padding: 40px;
     background-color: #efefef;
     /* Minimal dunkleres Grau */
+}
+
+/**********************************************
+EIN/AUS SCHALTER für Elemente, z.B. Logo
+**********************************************/
+
+    /* Smartphone Hochformat */
+    @media (max-width: 768px) {
+        .logo {
+            display: none;
+        }
+
+    }
