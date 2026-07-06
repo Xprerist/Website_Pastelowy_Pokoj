@@ -415,7 +415,7 @@ HERO
 
 .hero h1 {
     position: relative;
-    left: -5px;
+    left: 0px;
 }
 
 .hero img {
