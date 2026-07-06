@@ -298,8 +298,8 @@ h3 {
 /* BEGIN LOGO */
 .logo {
     position: fixed;
-    top: 65px;
-    right: 25px;
+    top: 80px;
+    right: 35px;
     z-index: 9999;
 }
 
