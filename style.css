@@ -293,19 +293,18 @@ h3 {
         transform: translateX(calc(-50% - 10px));
     }
 }
-
 /* END TESTIMONIALS */
 
 /* BEGIN LOGO */
 .logo {
     position: fixed;
-    top: 20px;
-    right: 25px;
+    top: 70px;
+    right: 30px;
     z-index: 9999;
 }
 
 .logo img {
-    width: 130px;
+    width: 260px;
     height: auto;
     display: block;
 }
@@ -314,8 +313,8 @@ h3 {
 /* BEGIN HAMBURGER MENU */
 #menu-button {
     position: fixed;
-    top: 65px;
-    left: 25px;
+    top: 70px;
+    left: 30px;
     z-index: 9999;
     background: rgba(255, 255, 255, .85);
     border: none;
