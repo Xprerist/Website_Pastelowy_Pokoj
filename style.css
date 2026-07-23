@@ -431,6 +431,23 @@ h3 {
     font-weight: 600;
 }
 
+.schedule-link {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.schedule-link a {
+    color: #4f5d73;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.schedule-link a:hover {
+    color: #1b5e20;
+    text-decoration: underline;
+}
+
 /* Pastellfarben */
 
 .monday {
