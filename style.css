@@ -437,14 +437,14 @@ h3 {
 }
 
 .schedule-link a {
-    color: #4f5d73;
+    color: #color: #2c6fb7; /* Blau */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .schedule-link a:hover {
-    color: #1b5e20;
+    color: #1f4f85;      /* dunkleres Blau */
     text-decoration: underline;
 }
 
