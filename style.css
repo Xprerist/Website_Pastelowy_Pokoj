@@ -687,6 +687,20 @@ FOOTER
 }
 
 /**********************************************
+Teil vom FOOTER - Vergrößerugn eines Images
+**********************************************/
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-large {
+    width: 36px;
+    height: 36px;
+}
+
+/**********************************************
 EIN/AUS SCHALTER für Elemente, z.B. Logo
 **********************************************/
 
