@@ -697,9 +697,9 @@ Teil vom FOOTER - Vergrößerung einzelner Images
 }
 
 .icon-large {
-    width: 64px;
-    height: 64px;
-    border: 2px solid blue;
+    width: 64px !important;
+    height: 64px !important;
+    border: 2px solid blue !important;
 }
 
 /**********************************************
