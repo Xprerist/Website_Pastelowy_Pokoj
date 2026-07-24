@@ -693,11 +693,13 @@ Teil vom FOOTER - Vergrößerung einzelner Images
 .footer-social img {
     width: 28px;
     height: 28px;
+    border: 1px solid red;
 }
 
 .icon-large {
     width: 64px;
     height: 64px;
+    border: 2px solid blue;
 }
 
 /**********************************************
