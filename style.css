@@ -41,10 +41,6 @@ section {
     text-align: center;
 }
 
-.footer-main,
-.footer-blog {
-    text-align: center;
-}
 
 /* ==========================================================================
    2. STYLES FÜR HAUPTSEITE (index.html)
@@ -165,13 +161,6 @@ h3 {
     justify-content: center;
     border-radius: 15px;
     border: 2px dashed #8fa98f;
-}
-
-.footer-main {
-    padding: 20px;
-    font-size: 0.9em;
-    background-color: #f4f4f4;
-    /* Hellgrau */
 }
 
 .container {
@@ -434,7 +423,8 @@ h3 {
 .schedule-link {
     margin-top: 20px;
     font-size: 0.95rem;
-    color: #2c6fb7; /* Blau */
+    color: #2c6fb7;
+    /* Blau */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
@@ -664,10 +654,29 @@ BUTTON
 FOOTER
 **********************/
 
-.footer-blog {
-    padding: 40px;
+.footer {
+    padding: 30px 20px;
+    font-size: 0.9em;
+    text-align: center;
     background-color: #efefef;
     /* Minimal dunkleres Grau */
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform .2s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
 }
 
 /**********************************************
