@@ -696,10 +696,9 @@ Teil vom FOOTER - Vergrößerung einzelner Images
     border: 1px solid red;
 }
 
-.icon-large {
-    width: 64px !important;
-    height: 64px !important;
-    border: 2px solid blue !important;
+.footer-social img.icon-large {
+    width: 64px;
+    height: 64px;
 }
 
 /**********************************************
