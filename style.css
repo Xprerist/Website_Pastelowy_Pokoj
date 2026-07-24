@@ -686,6 +686,32 @@ FOOTER
     transform: scale(1.12);
 }
 
+.footer-links {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 0.95rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.footer-links li + li::before {
+    content: "|";
+    margin: 0 14px;
+    opacity: .6;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /**********************************************
 Teil vom FOOTER - Vergrößerung einzelner Images
 **********************************************/
