@@ -687,17 +687,17 @@ FOOTER
 }
 
 /**********************************************
-Teil vom FOOTER - Vergrößerugn eines Images
+Teil vom FOOTER - Vergrößerung einzelner Images
 **********************************************/
 
 .footer-social img {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 
 .icon-large {
-    width: 36px;
-    height: 36px;
+    width: 64px;
+    height: 64px;
 }
 
 /**********************************************
