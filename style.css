@@ -769,14 +769,6 @@ Teil vom FOOTER - Vergrößerung einzelner Images
 EIN/AUS SCHALTER für Elemente, z.B. Logo
 **********************************************/
 
-/* Smartphone Hochformat
-@media (max-width: 768px) {
-    .logo {
-        display: none;
-    }
-}
-*/
-
 /* Desktop */
 .logo img {
     width: 220px;
@@ -794,4 +786,15 @@ EIN/AUS SCHALTER für Elemente, z.B. Logo
     .logo {
         display: none;
     }
+}
+
+/**********************************************
+Document Name
+**********************************************/
+.document-name {
+    color: #003366;
+    font-size: 0.7rem;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 3rem;
 }
