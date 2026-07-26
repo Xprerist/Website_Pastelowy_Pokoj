@@ -789,10 +789,10 @@ EIN/AUS SCHALTER für Elemente, z.B. Logo
 }
 
 /**********************************************
-Document Name
+Footer Document Name
 **********************************************/
 .document-name {
-    color: #003366;
+    color: black;
     font-size: 0.7rem;
     text-align: center;
     opacity: 0.5;
