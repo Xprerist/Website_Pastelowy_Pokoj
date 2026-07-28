@@ -229,6 +229,10 @@ h3 {
     padding: 40px 20px;
 }
 
+#about {
+    padding-top: 0;
+}
+
 #about-story {
     text-align: center;
 }
@@ -261,11 +265,10 @@ h3 {
 
 .hero-slider img {
     width: 100%;
-    height: 1200px;
-    object-fit: cover;
-    object-position: center bottom;
     display: block;
 }
+
+/* Hero Slider Animation */
 
 .hero-image {
     width: 100%;
