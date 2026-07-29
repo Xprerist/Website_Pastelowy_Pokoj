@@ -266,6 +266,7 @@ h3 {
 .hero-slider img {
     width: 100%;
     display: block;
+    margin-bottom: -14px; /* Verdeckt den versehentlich im Bild verbliebenen weißen Rand */
 }
 
 /* Hero Slider Animation */
